@@ -1,0 +1,19 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Failure: Simulation Ended!, TEST 1 PASSATO
+Time: 1950 ns  Iteration: 0  Process: /project_tb/test  File: D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd
+$finish called at time : 1950 ns : File "D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd" Line 135
+Failure: Simulation Ended!, TEST 2 PASSATO
+Time: 3550 ns  Iteration: 0  Process: /project_tb/test  File: D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd
+$finish called at time : 3550 ns : File "D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd" Line 150
+Failure: Simulation Ended!, TEST 1 PASSATO
+Time: 5450 ns  Iteration: 0  Process: /project_tb/test  File: D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd
+$finish called at time : 5450 ns : File "D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd" Line 135
+Note: ** Possibile errore counter **
+Time: 5650 ns  Iteration: 1  Process: /project_tb/MEM  File: D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd
+Failure: Simulation Ended!, TEST 1 PASSATO
+Time: 1950 ns  Iteration: 0  Process: /project_tb/test  File: D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd
+$finish called at time : 1950 ns : File "D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd" Line 135
+Failure: Simulation Ended!, TEST 2 PASSATO
+Time: 3550 ns  Iteration: 0  Process: /project_tb/test  File: D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd
+$finish called at time : 3550 ns : File "D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd" Line 150

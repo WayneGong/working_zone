@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Mar 29 18:44:28 2020
+# Process ID: 14528
+# Current directory: E:/00_Project/working_zone/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17204 E:\00_Project\working_zone\vivado\project_1.xpr
+# Log file: E:/00_Project/working_zone/vivado/vivado.log
+# Journal file: E:/00_Project/working_zone/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/00_Project/working_zone/vivado/project_1.xpr
+update_compile_order -fileset sources_1
+set_property part xc7a200tfbg484-1 [current_project]
+launch_simulation
+open_wave_config E:/00_Project/working_zone/vivado/working_zone_behav.wcfg
+source project_tb.tcl
+run all
+save_wave_config {E:/00_Project/working_zone/vivado/working_zone_behav.wcfg}
+run 10 us
+close_sim
+launch_simulation
+open_wave_config E:/00_Project/working_zone/vivado/working_zone_behav.wcfg
+source project_tb.tcl
+run all
+current_wave_config {working_zone_behav.wcfg}
+add_wave {{/project_tb/UUT/i_clk}} {{/project_tb/UUT/i_start}} {{/project_tb/UUT/i_rst}} {{/project_tb/UUT/i_data}} {{/project_tb/UUT/o_address}} {{/project_tb/UUT/o_done}} {{/project_tb/UUT/o_en}} {{/project_tb/UUT/o_we}} {{/project_tb/UUT/o_data}} {{/project_tb/UUT/o_address_dly}} {{/project_tb/UUT/o_en_dly}} {{/project_tb/UUT/o_we_dly}} {{/project_tb/UUT/data0}} {{/project_tb/UUT/data1}} {{/project_tb/UUT/data2}} {{/project_tb/UUT/data3}} {{/project_tb/UUT/data4}} {{/project_tb/UUT/data5}} {{/project_tb/UUT/data6}} {{/project_tb/UUT/data7}} {{/project_tb/UUT/i_addr}} {{/project_tb/UUT/i_data_en}} {{/project_tb/UUT/WZ_BIT}} {{/project_tb/UUT/WZ_NUM}} {{/project_tb/UUT/WZ_OFFSET}} {{/project_tb/UUT/WZ_OFFSET_ONE_HOT}} {{/project_tb/UUT/wz0}} {{/project_tb/UUT/wz1}} {{/project_tb/UUT/wz2}} {{/project_tb/UUT/wz3}} {{/project_tb/UUT/wz4}} {{/project_tb/UUT/wz5}} {{/project_tb/UUT/wz6}} {{/project_tb/UUT/wz7}} {{/project_tb/UUT/wz}} {{/project_tb/UUT/state}} 
+restart
+run all
+save_wave_config {E:/00_Project/working_zone/vivado/working_zone_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/00_Project/working_zone/vivado/working_zone_behav.wcfg
+source project_tb.tcl
+run all
+current_wave_config {working_zone_behav.wcfg}
+add_wave {{/project_tb/tb_done}} {{/project_tb/mem_address}} {{/project_tb/tb_rst}} {{/project_tb/tb_start}} {{/project_tb/tb_clk}} {{/project_tb/mem_o_data}} {{/project_tb/mem_i_data}} {{/project_tb/enable_wire}} {{/project_tb/mem_we}} {{/project_tb/RAM}} {{/project_tb/c_CLOCK_PERIOD}} 
+restart
+run all
+save_wave_config {E:/00_Project/working_zone/vivado/working_zone_behav.wcfg}
+save_wave_config {E:/00_Project/working_zone/vivado/working_zone_behav.wcfg}
+close_sim

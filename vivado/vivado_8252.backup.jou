@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Mar 29 22:41:56 2020
+# Process ID: 8252
+# Current directory: D:/00_Project/working_zone/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9156 D:\00_Project\working_zone\vivado\project_1.xpr
+# Log file: D:/00_Project/working_zone/vivado/vivado.log
+# Journal file: D:/00_Project/working_zone/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/00_Project/working_zone/vivado/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/00_Project/working_zone/vivado/working_zone_behav.wcfg
+source project_tb.tcl
+run all
+close_sim

@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Mar 29 23:48:10 2020
+# Process ID: 8732
+# Current directory: D:/00_Project/working_zone/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12868 D:\00_Project\working_zone\vivado\project_1.xpr
+# Log file: D:/00_Project/working_zone/vivado/vivado.log
+# Journal file: D:/00_Project/working_zone/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/00_Project/working_zone/vivado/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/00_Project/working_zone/vivado/working_zone_behav.wcfg
+source project_tb.tcl
+run all
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/00_Project/working_zone/multi_start_fix.vhd
+update_compile_order -fileset sim_1
+close_sim
+export_ip_user_files -of_objects  [get_files D:/00_Project/working_zone/Test_Bench.vhdl] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/00_Project/working_zone/Test_Bench.vhdl
+export_ip_user_files -of_objects  [get_files D:/00_Project/working_zone/working_zone.vhd] -no_script -reset -force -quiet
+remove_files  D:/00_Project/working_zone/working_zone.vhd
+add_files -norecurse D:/00_Project/working_zone/project_reti_logiche.vhd
+launch_simulation
+open_wave_config D:/00_Project/working_zone/vivado/working_zone_behav.wcfg
+source project_tb.tcl
+run all
+close_sim
+delete_fileset [ get_filesets sim_1 ]
+export_ip_user_files -of_objects  [get_files D:/00_Project/working_zone/project_reti_logiche.vhd] -no_script -reset -force -quiet
+remove_files  D:/00_Project/working_zone/project_reti_logiche.vhd
+export_ip_user_files -of_objects  [get_files D:/00_Project/working_zone/multi_start_fix.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/00_Project/working_zone/multi_start_fix.vhd
+add_files -norecurse D:/00_Project/working_zone/hdl/src/project_reti_logiche.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/00_Project/working_zone/hdl/test/multi_start_fix.vhd
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/00_Project/working_zone/vivado/working_zone_behav.wcfg
+source project_tb.tcl
+run all
+run all
+run all
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 100 ns
+run 100 ns
+restart
+run all
+run all
+run 100 ns
+close_sim

@@ -1,0 +1,7 @@
+Running: xsim.dir/working_zone_behav/xsimk.exe -simmode gui -wdb working_zone_behav.wdb -simrunnum 0 -socket 6937
+Design successfully loaded
+Design Loading Memory Usage: 6060 KB (Peak: 6060 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 6852 KB (Peak: 6852 KB)
+Simulation CPU Usage: 61 ms

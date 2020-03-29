@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../working_zone.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../hdl/src/project_reti_logiche.vhd" \
+"../../../../../hdl/test/multi_start_fix.vhd" \
+
+# Do not sort compile order
+nosort
